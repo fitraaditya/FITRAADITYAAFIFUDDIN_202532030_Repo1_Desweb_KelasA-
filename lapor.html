@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lapor - Pengamat Burung Kota Jakarta</title>
+</head>
+<body>
+<header>
+<h1>Lapor Pengamatan</h1>
+<nav>
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="spesies.html">Spesies</a></li>
+<li><a href="panduan.html">Panduan Mengamati</a></li>
+<li><a href="lapor.html">Lapor Pengamatan</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2>Formulir Laporan</h2>
+<form action="#" method="post">
+<p>
+<label for="nama">Nama:</label>
+<input type="text" id="nama" name="nama" required>
+</p>
+<p>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+</p>
+<p>
+<label for="tanggal">Tanggal pengamatan:</label>
+<input type="date" id="tanggal" name="tanggal" required>
+</p>
+<p>
+<label for="jumlah">Jumlah burung:</label>
+<input type="number" id="jumlah" name="jumlah" min="1" max="100" required>
+</p>
+<p>
+<label for="spesies">Spesies:</label>
+<select id="spesies" name="spesies" required>
+<option value="">-- Pilih --</option>
+<option value="kutilang">Cucak Kutilang</option>
+<option value="perkutut">Perkutut Jawa</option>
+<option value="layang">Layang-layang Batu</option>
+</select>
+</p>
+<fieldset>
+<legend>Waktu pengamatan</legend>
+<input type="radio" id="pagi" name="waktu" value="pagi" required>
+<label for="pagi">Pagi</label>
+<input type="radio" id="sore" name="waktu" value="sore">
+<label for="sore">Sore</label>
+</fieldset>
+<p>
+<input type="checkbox" id="setuju" name="setuju" required>
+<label for="setuju">Data yang saya isi sudah benar.</label>
+</p>
+<p>
+<label for="catatan">Catatan:</label><br>
+<textarea id="catatan" name="catatan" rows="4" cols="40"></textarea>
+</p>
+<button type="submit">Kirim Laporan</button>
+</form>
+</section>
+</main>
+<footer>
+<p>&copy; 2026 Pengamat Burung Kota Jakarta. 202532030_FITRA ADITYA AFIFUDDIN</p>
+</footer>
+</body>
+</html>
